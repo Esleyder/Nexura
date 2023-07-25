@@ -55,9 +55,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <?php foreach ($area as $areas) : ?>
                     <option value="<?php  echo $areas['id']; ?>"><?php echo $areas['nombre']; ?></option>
                 <?php endforeach; ?>
-            </select></p>
+        </select></p>
 
-            <textarea name="descripcion"  rows="4" cols="50" placeholder="Escribe un comentario"></textarea>
+            <p><textarea name="descripcion"  rows="4" cols="50" placeholder="Escribe un comentario"></textarea></p>
   
     <p><input type="submit" value="Guardar"></p>
 

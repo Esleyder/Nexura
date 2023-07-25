@@ -30,7 +30,7 @@ $rol = $objetoRol->getRol();
     <form action="" method="">
         <?php foreach ($rol as $roles) : ?>
             <label>
-                <input type="checkbox" name="rol_i[]" value="<?php echo $roles['id']; ?>">
+                <input type="checkbox" name="rol_id[]" value="<?php echo $roles['id']; ?>">
                 <?php echo $roles['nombre']; ?>
             </label>
             <br>
