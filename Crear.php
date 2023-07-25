@@ -2,8 +2,10 @@
 require_once("Conexion.php");
 require_once("Empleado.php");
 require_once("Area.php");
+require_once("Rol.php");
 $objetoArea =new Area();
- 
+$objetoRol = new Rol();
+$roles = $objetoRol->getRol();
 
 $area = $objetoArea->getAreas();
 
@@ -57,7 +59,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <?php endforeach; ?>
         </select></p>
 
-            <p><textarea name="descripcion"  rows="4" cols="50" placeholder="Escribe un comentario"></textarea></p>
+           
+        <p><textarea name="descripcion"  rows="4" cols="50" placeholder="Escribe un comentario"></textarea></p>
+
+        <p>Roles:</p>
+        <?php foreach ($roles as $rol) : ?>
+            <label>
+                <input type="checkbox" name="roles[]" value="<?php echo $rol['id']; ?>">
+                <?php echo $rol['nombre']; ?>
+            </label>
+            <br>
+        <?php endforeach; ?>
   
     <p><input type="submit" value="Guardar"></p>
 

@@ -14,29 +14,6 @@ class Rol extends ConexionBD {
     }
 }
 
-$objetoRol = new Rol();
-$rol = $objetoRol->getRol();
-
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="" method="">
-        <?php foreach ($rol as $roles) : ?>
-            <label>
-                <input type="checkbox" name="rol_id[]" value="<?php echo $roles['id']; ?>">
-                <?php echo $roles['nombre']; ?>
-            </label>
-            <br>
-        <?php endforeach; ?>
 
-        <input type="submit" value="Enviar">
-    </form>
-</body>
-</html>
