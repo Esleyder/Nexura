@@ -1,5 +1,5 @@
 <?php
-require_once("Conexion.php");
+require_once("./Conexion/Conexion.php");
  
 class Empleado extends ConexionBD{
 private $nombre_empleado;

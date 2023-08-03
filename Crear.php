@@ -1,8 +1,8 @@
 <?php
-require_once("Conexion.php");
-require_once("Empleado.php");
-require_once("Area.php");
-require_once("Rol.php");
+require_once("./Conexion/Conexion.php");
+require_once("./Clases/Empleado.php");
+require_once("./Clases/Area.php");
+require_once("./Clases/Rol.php");
 $objetoArea =new Area();
 $objetoRol = new Rol();
 $roles = $objetoRol->getRol();

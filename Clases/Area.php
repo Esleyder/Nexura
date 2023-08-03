@@ -1,5 +1,5 @@
 <?php
- require_once("Conexion.php");
+ require_once("./Conexion/Conexion.php");
 class Area extends ConexionBD{
 private $id;
 private $nombre;

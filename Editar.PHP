@@ -1,6 +1,6 @@
 <?php
-require_once("Empleado.php");
-require_once("Area.php");
+require_once("./Clases/Empleado.php");
+require_once("./Clases/Area.php");
 $objetoArea =new Area();
  
 
